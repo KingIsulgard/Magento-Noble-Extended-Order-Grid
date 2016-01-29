@@ -7,6 +7,7 @@ This Magento extension gives the user the flexibility to customize the orders gr
 * [Configuration](#configuration)
 * [Screen](#screens)
 * [Donation](#donate)
+* [Changelog](#changelog)
 * [License](#license)
 * [Warranty](#warranty)
 
@@ -42,6 +43,10 @@ You can support [contributors](https://github.com/KingIsulgard/Magento-Noble-Ext
 Please consider a small donation if you use Magento-Noble-Extended-Order-Grid on your store. It would make me really happy.
 
 * [@KingIsulgard](https://github.com/KingIsulgard): <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HQE64D8RQGPLC"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="[paypal]" /></a> !
+
+## Changelog
+### Version 1.0.1
+Countries can now be displayed as either the full country name or the country code. Added extra custom columns Shipping Region, Billing Region, Shipping City, Billing City, Shipping Postcode, Billing Postcode
 
 ## License
 The license for the code is included with the project; it's basically a BSD license with attribution.

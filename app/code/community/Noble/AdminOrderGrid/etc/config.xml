@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Noble_AdminOrderGrid>
-            <version>1.0</version>
+            <version>1.0.1</version>
         </Noble_AdminOrderGrid>
     </modules>
     <global>
@@ -14,9 +14,9 @@
             </adminhtml>
         </blocks>
         <models>
-            <adminordergrid>
+            <noble_adminordergrid>
                 <class>Noble_AdminOrderGrid_Model</class>
-            </adminordergrid>
+            </noble_adminordergrid>
         </models>
         <helpers>
             <adminordergrid>

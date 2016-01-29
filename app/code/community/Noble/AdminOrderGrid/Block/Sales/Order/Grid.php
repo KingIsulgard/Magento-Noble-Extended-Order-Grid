@@ -62,8 +62,32 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 			$billingFields["billing_country"] = "sfoba.country_id";
 		}
 		
+		if(Mage::getStoreConfig('noble/extended_columns/billing_region')) {
+			$billingFields["billing_region"] = "sfoba.region";
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/billing_city')) {
+			$billingFields["billing_city"] = "sfoba.city";
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/billing_postcode')) {
+			$billingFields["billing_postcode"] = "sfoba.postcode";
+		}
+		
 		if(Mage::getStoreConfig('noble/extended_columns/shipping_country')) {
-			$billingFields["shipping_country"] = "sfosa.country_id";
+			$shippingFields["shipping_country"] = "sfosa.country_id";
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/shipping_region')) {
+			$shippingFields["shipping_region"] = "sfosa.region";
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/shipping_city')) {
+			$shippingFields["shipping_city"] = "sfosa.city";
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/shipping_postcode')) {
+			$shippingFields["shipping_postcode"] = "sfosa.postcode";
 		}
 		
 		if(Mage::getStoreConfig('noble/extended_columns/payment_method')) {
@@ -168,7 +192,6 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 			));
 		}
 		
-		
 		if(Mage::getStoreConfig('noble/default_columns/status')) {
 			$this->addColumn('status', array(
 				'header' => $this->__('Status'),
@@ -187,7 +210,7 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 				'index'     =>  'customer_group_id',
 				'type'      =>  'options',
 				'options'   =>  $this->getCustomerGroupOptions(),
-				'renderer' => 'noble_AdminOrderGrid_Block_Sales_Order_Grid_Renderer_CustomerGroup'
+				'renderer' => 'Noble_AdminOrderGrid_Block_Sales_Order_Grid_Renderer_CustomerGroup'
 			));
 		}
 		
@@ -198,7 +221,7 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 				'filter_index' => 'sfo.shipping_method', 
 				'type' => 'options',
 				'options' => $this->getShippingMethodOptions(),
-				'renderer' => 'noble_AdminOrderGrid_Block_Sales_Order_Grid_Renderer_Shippingmethod'
+				'renderer' => 'Noble_AdminOrderGrid_Block_Sales_Order_Grid_Renderer_Shippingmethod'
 			));
 		}
 		
@@ -209,7 +232,7 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 			));
 		}
 		
-		if(Mage::getStoreConfig('noble/extended_columns/billing_country')) {
+		if(Mage::getStoreConfig('noble/extended_columns/billing_country') == "code") {
 			$this->addColumn('billing_country', array(
 				'header' => Mage::helper('sales')->__('Billing Country'), 
 				'index' => 'billing_country', 
@@ -218,11 +241,83 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 			));
 		}
 		
-		if(Mage::getStoreConfig('noble/extended_columns/shipping_country')) {
+		if(Mage::getStoreConfig('noble/extended_columns/billing_country') == "full") {
+			$this->addColumn('billing_country', array(
+				'header'   => Mage::helper('sales')->__('Billing Country'), 
+				'index'    => 'billing_country',
+				'type' => 'options',
+				'options' => $this->getCountryOptions(),
+				'filter_index' => 'sfoba.country_id', 
+				'renderer' => 'adminhtml/widget_grid_column_renderer_country',
+				'width' => '60'
+			));
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/billing_region')) {
+			$this->addColumn('billing_region', array(
+				'header' => $this->__('Billing Region'),
+				'index' => 'billing_region', 
+				'filter_index' => 'sfoba.region'
+			));
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/billing_city')) {
+			$this->addColumn('billing_city', array(
+				'header' => $this->__('Billing City'),
+				'index' => 'billing_city',
+				'filter_index' => 'sfoba.city'
+			));
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/billing_postcode')) {
+			$this->addColumn('billing_postcode', array(
+				'header' => $this->__('Billing Postcode'),
+				'index' => 'billing_postcode',
+				'filter_index' => 'sfoba.postcode'
+			));
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/shipping_country') == "code") {
 			$this->addColumn('shipping_country', array(
-				'header' => Mage::helper('sales')->__('Shipping Country'), 
+				'header' => Mage::helper('sales')->__('Billing Country'), 
 				'index' => 'shipping_country', 
 				'filter_index' => 'sfosa.country_id', 
+				'width' => '60'
+			));
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/shipping_region')) {
+			$this->addColumn('shipping_region', array(
+				'header' => $this->__('Shipping Region'),
+				'index' => 'shipping_region',
+				'filter_index' => 'sfosa.region'
+			));
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/shipping_city')) {
+			$this->addColumn('shipping_city', array(
+				'header' => $this->__('Shipping City'),
+				'index' => 'shipping_city',
+				'filter_index' => 'sfosa.city'
+			));
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/shipping_postcode')) {
+			$this->addColumn('shipping_postcode', array(
+				'header' => $this->__('Shipping Postcode'),
+				'index' => 'shipping_postcode',
+				'filter_index' => 'sfosa.postcode'
+			));
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/shipping_country') == "full") {
+			$this->addColumn('billing_country', array(
+				'header'   => Mage::helper('sales')->__('Billing Country'), 
+				'index'    => 'shipping_country',
+				'type' => 'options',
+				'options' => $this->getCountryOptions(),
+				'filter_index' => 'sfosa.country_id', 
+				'renderer' => 'adminhtml/widget_grid_column_renderer_country',
 				'width' => '60'
 			));
 		}
@@ -234,7 +329,7 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 				'filter_index' => 'sfop.method', 
 				'type' => 'options',
 				'options' => $this->getPaymentMethodOptions(),
-				'renderer' => 'noble_AdminOrderGrid_Block_Sales_Order_Grid_Renderer_Paymentmethod',
+				'renderer' => 'Noble_AdminOrderGrid_Block_Sales_Order_Grid_Renderer_Paymentmethod',
 				'width' => '60'
 			));
 		}
@@ -427,5 +522,20 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 			}
         }
         return $options;
+    }
+	
+    /**
+     * Returns possible filters for Country column.
+     *
+     * @return array
+     */
+    public function getCountryOptions()
+    {
+       	$options = Mage::getResourceModel('directory/country_collection')->load()->toOptionArray(); 
+        $countries = array(); 
+        foreach($options as $options){
+             $countries[$options['value']]=$options['label']; 
+            } 
+    	return $countries;
     }
 }

@@ -161,23 +161,77 @@
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                         </payment_method>
                         <shipping_country translate="label">
-                            <label>Shipping: Country: </label>
+                            <label>Shipping Country: </label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>204</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <source_model>noble_adminordergrid/system_config_source_dropdown_country</source_model>
+                        </shipping_country>
+                        <shipping_region translate="label">
+                            <label>Shipping Region: </label>
                             <frontend_type>select</frontend_type>
                             <sort_order>205</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
-                        </shipping_country>
-                        <billing_country translate="label">
-                            <label>Billing: Country: </label>
+                        </shipping_region>
+                        <shipping_city translate="label">
+                            <label>Shipping City: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>212</sort_order>
+                            <sort_order>206</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </shipping_city>
+                        <shipping_postcode translate="label">
+                            <label>Shipping Postcode: </label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>207</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </shipping_postcode>
+                        <billing_country translate="label">
+                            <label>Billing Country: </label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>208</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <source_model>noble_adminordergrid/system_config_source_dropdown_country</source_model>
                         </billing_country>
+                        <billing_region translate="label">
+                            <label>Billing Region: </label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>209</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </billing_region>
+                        <billing_city translate="label">
+                            <label>Billing City: </label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </billing_city>
+                        <billing_postcode translate="label">
+                            <label>Billing Postcode: </label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>211</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </billing_postcode>
                         <customer_email translate="label">
                             <label>Customer Email: </label>
                             <frontend_type>select</frontend_type>
