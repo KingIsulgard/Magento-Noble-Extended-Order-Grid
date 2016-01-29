@@ -1,4 +1,4 @@
-# Magento-Noble-Extended-Order-Grid
+# Noble Extended Order Grid for Magento
 This Magento extension gives the user the flexibility to customize the orders grid in the admin by removing existing columns or even adding custom columns to the grid.
 
 ## Overview
