@@ -25,7 +25,7 @@ This Magento extension gives the user the flexibility to customize the orders gr
 - Customer Group
 
 ## Implementation
-Simply upload the files in the app folder to the app folder of your Magento installation. It is recommended to test this on a test server first. The current module has only been tested with Magento Community 1.7
+Simply upload the files in the app folder to the app folder of your Magento installation. It is recommended to test this on a test server first. The current module has been tested with Magento Community 1.7.X, 1.8.X and 1.9.X
 
 Usually you will be required to log out and log back in in order for it to work.
 
