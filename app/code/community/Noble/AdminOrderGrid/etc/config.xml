@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Noble_AdminOrderGrid>
-            <version>1.0.1</version>
+            <version>1.0.2</version>
         </Noble_AdminOrderGrid>
     </modules>
     <global>
@@ -44,8 +44,10 @@
                 <billing_country>0</billing_country>
                 <customer_email>0</customer_email>
                 <amount_items>0</amount_items>
+                <weight>0</weight>
                 <subtotal>0</subtotal>
                 <customer_group>0</customer_group>
+                <remote_ip>0</remote_ip>
             </extended_columns>
         </noble>
     </default>

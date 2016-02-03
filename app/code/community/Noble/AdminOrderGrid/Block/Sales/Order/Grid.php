@@ -50,12 +50,20 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 			$orderFields["total_qty_ordered"] = "ROUND(total_qty_ordered,0)";
 		}
 		
+		if(Mage::getStoreConfig('noble/extended_columns/weight')) {
+			$orderFields["weight"] = "weight";
+		}
+		
 		if(Mage::getStoreConfig('noble/extended_columns/customer_group')) {
 			$orderFields["customer_group_id"] = "customer_group_id";
 		}
 		
 		if(Mage::getStoreConfig('noble/extended_columns/subtotal')) {
 			$orderFields["subtotal"] = "subtotal";
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/remote_ip')) {
+			$orderFields["remote_ip"] = "remote_ip";
 		}
 		
 		if(Mage::getStoreConfig('noble/extended_columns/billing_country')) {
@@ -162,6 +170,14 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 				'type' => 'int',
 				'index' => 'total_qty_ordered', 
 				'width' => '40px'
+			));
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/weight')) {
+			$this->addColumn('weight', array(
+				'header' => $this->__('Weight'),
+				'index' => 'weight',
+				'filter_index' => 'sfo.weight'
 			));
 		}
 
@@ -331,6 +347,14 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 				'options' => $this->getPaymentMethodOptions(),
 				'renderer' => 'Noble_AdminOrderGrid_Block_Sales_Order_Grid_Renderer_Paymentmethod',
 				'width' => '60'
+			));
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/remote_ip')) {
+			$this->addColumn('remote_ip', array(
+				'header' => $this->__('Remote IP'),
+				'index' => 'remote_ip',
+				'filter_index' => 'sfo.remote_ip'
 			));
 		}
 		

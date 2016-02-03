@@ -250,10 +250,19 @@
                             <show_in_store>0</show_in_store>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                         </amount_items>
+                        <weight translate="label">
+                            <label>Weight: </label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>222</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </weight>
                         <subtotal translate="label">
                             <label>Subtotal: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>222</sort_order>
+                            <sort_order>223</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -262,12 +271,21 @@
                         <customer_group translate="label">
                             <label>Customer Group: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>223</sort_order>
+                            <sort_order>224</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                         </customer_group>
+                        <remote_ip translate="label">
+                            <label>Remote IP: </label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>225</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </remote_ip>
                     </fields>
                 </extended_columns>
             </groups>
