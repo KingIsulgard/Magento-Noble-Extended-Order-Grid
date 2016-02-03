@@ -23,6 +23,8 @@ This Magento extension gives the user the flexibility to customize the orders gr
 - Amount of items in the order
 - Subtotal
 - Customer Group
+- Weight
+- Remote IP
 
 ## Implementation
 Simply upload the files in the app folder to the app folder of your Magento installation. It is recommended to test this on a test server first. The current module has been tested with Magento Community 1.7.X, 1.8.X and 1.9.X
@@ -45,8 +47,14 @@ Please consider a small donation if you use Magento-Noble-Extended-Order-Grid on
 * [@KingIsulgard](https://github.com/KingIsulgard): <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HQE64D8RQGPLC"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="[paypal]" /></a> !
 
 ## Changelog
+### Version 1.0.2
+Added extended columns Weight and Remote IP. Increased compatibility with more Magento Community versions.
+
 ### Version 1.0.1
 Countries can now be displayed as either the full country name or the country code. Added extra custom columns Shipping Region, Billing Region, Shipping City, Billing City, Shipping Postcode, Billing Postcode
+
+### Version 1.0.0
+Original release. Turn off any of the default columns with a simple Yes/No and Add new custom columns. Available custom columns are: Shipping method, Payment method, Shipping country, Billing country, Customer email, Amount of items in the order, Subtotal and Customer Group
 
 ## License
 The license for the code is included with the project; it's basically a BSD license with attribution.
