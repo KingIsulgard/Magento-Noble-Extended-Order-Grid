@@ -27,6 +27,14 @@ This Magento extension gives the user the flexibility to customize the orders gr
 - Remote IP
 
 ## Implementation
+### Magento Connect
+Get the latest installation key from Magento Connect and install it with your Magento ConnectManager.
+https://www.magentocommerce.com/magento-connect/catalog/product/view/id/31028/
+
+### By upload
+Download the latest tgz file from the releases folder on this GIT and install it with your Magento ConnectManager.
+
+### Manual install
 Simply upload the files in the app folder to the app folder of your Magento installation. It is recommended to test this on a test server first. The current module has been tested with Magento Community 1.7.X, 1.8.X and 1.9.X
 
 Usually you will be required to log out and log back in in order for it to work.
