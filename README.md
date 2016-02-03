@@ -44,8 +44,8 @@ Configuring the columns is very easy. Just login to your Magento Admin panel, go
 
 ## Screens
 Some screenshots of the module in action.
-![Configuration](https://raw.githubusercontent.com/KingIsulgard/Magento-Noble-Extended-Order-Grid/master/configuration.png)
-![Grid](https://raw.githubusercontent.com/KingIsulgard/Magento-Noble-Extended-Order-Grid/master/grid.png)
+![Configuration](https://raw.githubusercontent.com/KingIsulgard/Magento-Noble-Extended-Order-Grid/master/screens/configuration.png)
+![Grid](https://raw.githubusercontent.com/KingIsulgard/Magento-Noble-Extended-Order-Grid/master/screens/grid.png)
 
 ## Donate
 You can support [contributors](https://github.com/KingIsulgard/Magento-Noble-Extended-Order-Grid/graphs/contributors) of this project individually. Every contributor is welcomed to add his/her line below with any content. Ordering shall be alphabetically by GitHub username.
