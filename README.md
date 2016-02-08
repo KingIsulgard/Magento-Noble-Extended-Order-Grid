@@ -4,6 +4,8 @@ Managing orders is probably the most frequent task you'll be doing in Magento wh
 
 This extension gives the user the flexibility to customize the orders grid in the admin by removing existing columns or even adding custom columns to the grid. This way you will be able to customize and use the order grid however you want. Only display and be able to filter on the attributes you need for your store.
 
+Tailor your order grid using a simple to use form in the admin configuration area in just a few seconds. This is a real time saver for anyone who prefers not to mess around in the Magento core files himself.
+
 ## Overview
 * [Features](#features)
 * [Implementation](#implementation)
