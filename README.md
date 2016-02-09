@@ -60,6 +60,9 @@ Please consider a small donation if you use Magento-Noble-Extended-Order-Grid on
 * [@KingIsulgard](https://github.com/KingIsulgard): <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HQE64D8RQGPLC"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="[paypal]" /></a> !
 
 ## Changelog
+### Version 1.0.3
+Fixed issue with non standard payment methods not showing up in the column filter select field.
+
 ### Version 1.0.2
 Added extended columns Weight and Remote IP. Increased compatibility with more Magento Community versions.
 
