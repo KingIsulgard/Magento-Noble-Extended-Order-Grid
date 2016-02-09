@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Noble_AdminOrderGrid>
-            <version>1.0.2</version>
+            <version>1.0.3</version>
         </Noble_AdminOrderGrid>
     </modules>
     <global>
