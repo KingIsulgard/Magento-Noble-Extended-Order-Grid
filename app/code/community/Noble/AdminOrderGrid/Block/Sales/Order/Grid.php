@@ -539,6 +539,10 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
                 $optionText = 'MSP Visa';
             } elseif ($option->getMethod() == "paypal") {
                 $optionText = 'PayPal';
+			} elseif ($option->getMethod() == "ugiftcert") {
+				$optionText = 'Unirgy Gift Certificate';
+            } else {
+                $optionText = ucfirst($option->getMethod());
             }
 			
 			if($optionText) {

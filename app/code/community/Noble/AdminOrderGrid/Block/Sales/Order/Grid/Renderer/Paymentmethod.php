@@ -41,6 +41,8 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid_Renderer_Paymentmethod extends
 			return 'MSP Visa';
 		} elseif ($value == "paypal") {
 			return 'PayPal';
+		} elseif ($value == "ugiftcert") {
+			return 'Unirgy Gift Certificate';
 		}
 			
         return ucfirst($value);
