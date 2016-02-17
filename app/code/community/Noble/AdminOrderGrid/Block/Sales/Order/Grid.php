@@ -66,6 +66,10 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 			$orderFields["remote_ip"] = "remote_ip";
 		}
 		
+		if(Mage::getStoreConfig('noble/extended_columns/coupon_code')) {
+			$orderFields["coupon_code"] = "coupon_code";
+		}
+		
 		if(Mage::getStoreConfig('noble/extended_columns/billing_country')) {
 			$billingFields["billing_country"] = "sfoba.country_id";
 		}
@@ -355,6 +359,14 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 				'header' => $this->__('Remote IP'),
 				'index' => 'remote_ip',
 				'filter_index' => 'sfo.remote_ip'
+			));
+		}
+		
+		if(Mage::getStoreConfig('noble/extended_columns/coupon_code')) {
+			$this->addColumn('coupon_code', array(
+				'header' => $this->__('Coupon code'),
+				'index' => 'coupon_code',
+				'filter_index' => 'sfo.coupon_code'
 			));
 		}
 		

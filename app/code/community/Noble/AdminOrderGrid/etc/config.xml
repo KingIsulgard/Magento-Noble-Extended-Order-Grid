@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Noble_AdminOrderGrid>
-            <version>1.0.3</version>
+            <version>1.0.4</version>
         </Noble_AdminOrderGrid>
     </modules>
     <global>
@@ -48,6 +48,7 @@
                 <subtotal>0</subtotal>
                 <customer_group>0</customer_group>
                 <remote_ip>0</remote_ip>
+                <coupon_code>0</coupon_code>
             </extended_columns>
         </noble>
     </default>
