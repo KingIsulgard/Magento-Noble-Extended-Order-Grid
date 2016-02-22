@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Noble_AdminOrderGrid>
-            <version>1.0.4</version>
+            <version>1.0.5</version>
         </Noble_AdminOrderGrid>
     </modules>
     <global>
@@ -39,9 +39,16 @@
             </default_columns>
             <extended_columns>
                 <shipping_method>0</shipping_method>
+				<shipping_description>0</shipping_description>
                 <payment_method>0</payment_method>
                 <shipping_country>0</shipping_country>
+                <shipping_region>0</shipping_region>
+                <shipping_city>0</shipping_city>
+                <shipping_postcode>0</shipping_postcode>
                 <billing_country>0</billing_country>
+                <billing_region>0</billing_region>
+                <billing_city>0</billing_city>
+                <billing_postcode>0</billing_postcode>
                 <customer_email>0</customer_email>
                 <amount_items>0</amount_items>
                 <weight>0</weight>

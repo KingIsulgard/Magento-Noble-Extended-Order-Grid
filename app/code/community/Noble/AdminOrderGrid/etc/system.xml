@@ -145,16 +145,25 @@
                         <shipping_method translate="label">
                             <label>Shipping Method: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>202</sort_order>
+                            <sort_order>205</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
                             <source_model>adminhtml/system_config_source_yesno</source_model>
                         </shipping_method>
+                        <shipping_description translate="label">
+                            <label>Shipping Description: </label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </shipping_description>
                         <payment_method translate="label">
                             <label>Payment Method: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>203</sort_order>
+                            <sort_order>215</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -163,7 +172,7 @@
                         <shipping_country translate="label">
                             <label>Shipping Country: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>204</sort_order>
+                            <sort_order>220</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -172,7 +181,7 @@
                         <shipping_region translate="label">
                             <label>Shipping Region: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>205</sort_order>
+                            <sort_order>225</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -181,7 +190,7 @@
                         <shipping_city translate="label">
                             <label>Shipping City: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>206</sort_order>
+                            <sort_order>230</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -190,7 +199,7 @@
                         <shipping_postcode translate="label">
                             <label>Shipping Postcode: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>207</sort_order>
+                            <sort_order>235</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -199,7 +208,7 @@
                         <billing_country translate="label">
                             <label>Billing Country: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>208</sort_order>
+                            <sort_order>240</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -208,7 +217,7 @@
                         <billing_region translate="label">
                             <label>Billing Region: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>209</sort_order>
+                            <sort_order>245</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -217,7 +226,7 @@
                         <billing_city translate="label">
                             <label>Billing City: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>210</sort_order>
+                            <sort_order>250</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -226,7 +235,7 @@
                         <billing_postcode translate="label">
                             <label>Billing Postcode: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>211</sort_order>
+                            <sort_order>255</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -235,7 +244,7 @@
                         <customer_email translate="label">
                             <label>Customer Email: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>220</sort_order>
+                            <sort_order>260</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -244,7 +253,7 @@
                         <amount_items translate="label">
                             <label># of Items: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>221</sort_order>
+                            <sort_order>265</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -253,7 +262,7 @@
                         <weight translate="label">
                             <label>Weight: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>222</sort_order>
+                            <sort_order>270</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -262,7 +271,7 @@
                         <subtotal translate="label">
                             <label>Subtotal: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>223</sort_order>
+                            <sort_order>275</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -271,7 +280,7 @@
                         <customer_group translate="label">
                             <label>Customer Group: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>224</sort_order>
+                            <sort_order>280</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -280,7 +289,7 @@
                         <remote_ip translate="label">
                             <label>Remote IP: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>225</sort_order>
+                            <sort_order>285</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
@@ -289,7 +298,7 @@
                         <coupon_code translate="label">
                             <label>Coupon code: </label>
                             <frontend_type>select</frontend_type>
-                            <sort_order>226</sort_order>
+                            <sort_order>290</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
