@@ -21,15 +21,23 @@ Tailor your order grid using a simple to use form in the admin configuration are
 - Add new custom columns
 - Available custom columns are: 
 - Shipping method
+- Shipping description
 - Payment method
 - Shipping country
+- Shipping region
+- Shipping postcode
+- Shipping city
 - Billing country
+- Billing region
+- Billing city
+- Billing postcode
 - Customer email
 - Amount of items in the order
 - Subtotal
 - Customer Group
 - Weight
 - Remote IP
+- Coupon code
 
 ## Implementation
 ### Magento Connect
@@ -60,8 +68,11 @@ Please consider a small donation if you use Magento-Noble-Extended-Order-Grid on
 * [@KingIsulgard](https://github.com/KingIsulgard): <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HQE64D8RQGPLC"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="[paypal]" /></a> !
 
 ## Changelog
+### Version 1.0.5
+Added "Shipping Description" column. 
+
 ### Version 1.0.4
-Added coupon code column. 
+Added "Coupon code" column. 
 
 ### Version 1.0.3
 Fixed issue with non standard payment methods not showing up in the column filter select field.
