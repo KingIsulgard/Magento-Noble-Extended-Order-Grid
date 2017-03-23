@@ -311,7 +311,7 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 		
 		if(Mage::getStoreConfig('noble/extended_columns/shipping_country') == "code") {
 			$this->addColumn('shipping_country', array(
-				'header' => Mage::helper('sales')->__('Billing Country'), 
+				'header' => Mage::helper('sales')->__('Shipping Country'), 
 				'index' => 'shipping_country', 
 				'filter_index' => 'sfosa.country_id', 
 				'width' => '60'
@@ -344,7 +344,7 @@ class Noble_AdminOrderGrid_Block_Sales_Order_Grid extends Mage_Adminhtml_Block_W
 		
 		if(Mage::getStoreConfig('noble/extended_columns/shipping_country') == "full") {
 			$this->addColumn('billing_country', array(
-				'header'   => Mage::helper('sales')->__('Billing Country'), 
+				'header'   => Mage::helper('sales')->__('Shipping Country'), 
 				'index'    => 'shipping_country',
 				'type' => 'options',
 				'options' => $this->getCountryOptions(),
