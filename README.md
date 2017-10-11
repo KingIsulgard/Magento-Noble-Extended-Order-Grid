@@ -69,22 +69,22 @@ Please consider a small donation if you use Magento-Noble-Extended-Order-Grid on
 
 ## Changelog
 ### Version 1.0.5
-Added "Shipping Description" column. 
+Added *Shipping Description* column. 
 
 ### Version 1.0.4
-Added "Coupon code" column. 
+Added *Coupon code* column. 
 
 ### Version 1.0.3
 Fixed issue with non standard payment methods not showing up in the column filter select field.
 
 ### Version 1.0.2
-Added extended columns Weight and Remote IP. Increased compatibility with more Magento Community versions.
+Added extended columns *Weight* and *Remote IP*. Increased compatibility with more Magento Community versions.
 
 ### Version 1.0.1
-Countries can now be displayed as either the full country name or the country code. Added extra custom columns Shipping Region, Billing Region, Shipping City, Billing City, Shipping Postcode, Billing Postcode
+Countries can now be displayed as either the full country name or the country code. Added extra custom columns *Shipping Region*, *Billing Region*, *Shipping City*, *Billing City*, *Shipping Postcode* and *Billing Postcode*.
 
 ### Version 1.0.0
-Original release. Turn off any of the default columns with a simple Yes/No and Add new custom columns. Available custom columns are: Shipping method, Payment method, Shipping country, Billing country, Customer email, Amount of items in the order, Subtotal and Customer Group
+Original release. Turn off any of the default columns with a simple *Yes/No* and Add new custom columns. Available custom columns are: *Shipping method*, *Payment method*, *Shipping country*, *Billing country*, *Customer email*, *Amount of items in the order*, *Subtotal* and *Customer Group*.
 
 ## License
 The license for the code is included with the project; it's basically a BSD license with attribution.
